@@ -1,0 +1,279 @@
+
+/* NETFLIX COLORS : 
+https://www.color-hex.com/color-palette/22942
+*/
+
+
+
+
+
+#tooltip {
+    color: #333;
+    background: #FFF;
+    box-shadow: 0 2px 24px -10px rgba(0,0,0,.85);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+
+#tooltip th{
+    padding-right:10px;
+    font-size:12px;
+}
+
+#tooltip td{
+    font-size:14px;
+    padding-right:5px;
+}
+
+.node rect {
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+ 
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+.link {
+  fill: none;
+  stroke: #96EAD8FF;
+}
+
+#loadingbar{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color: #000;
+    padding-top: 3px;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+#jason path{
+     cursor: pointer;
+}
+
+#jason div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    padding: 2px;
+    font-size: 15px;
+    background: #FFFFE0;
+    border: 1px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 3px gray;
+}
+.active{
+      opacity: 1;
+}
+.netflix_map{
+    margin-right: 0px;
+}
+.netflix_map_legend{
+    margin-left: 0px;
+}
+.exit{
+    fill: firebrick;
+}
+.enter{
+    fill: #28B463;
+}
+    
+.bar {
+      fill: steelblue;
+}
+
+.bar:hover {
+      fill: firebrick;
+}
+
+.axis--x path {
+    display: none;
+}
+
+g.infowin text{
+      font: 15px sans-serif;
+    font-family: 'Candara', sans-serif;  
+      fill: firebrick;
+}
+
+.axis text {
+      font: 11px sans-serif;
+    font-family: 'Candara', sans-serif;  
+      fill:rgb(255, 255, 255);
+}
+
+.bc_xaxis{
+    font: 11px sans-serif;
+    font-family: 'Candara', sans-serif;
+      fill:rgb(255, 255, 255);
+}
+
+#slider-range{
+    width: 20%;
+    opacity: 0;
+}
+
+#jason svg.netflix_map{
+    background-color: #000000;
+}
+
+#distribution_of_shows svg{
+    background-color: #000000;
+}
+
+#total_tv_shows svg{
+    background-color: #000000;
+}
+
+
+
+#bubblechart svg{
+    background-color: black;
+}
+
+#bubblechart2 svg{
+    background-color: black;
+}
+
+#barchart svg{
+    background-color: #000;
+}
+
+g text{
+    fill: white;
+}
+
+svg{
+    box-shadow: 0 0 3px rgb(255, 0, 0);
+}
+
+#recenter{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+path.line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+path.area {
+    fill: #e7e7e7;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.x.axis line {
+    stroke: #fff;
+}
+
+.x.axis .minor {
+    stroke-opacity: .7;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.y.axis line, .y.axis path {
+    fill: none;
+    stroke: #ffffff;
+}
+.guideline {
+    margin-right: 100px;
+    float: right;
+}
+
+
+body{
+    margin: 0 auto;
+    font-family:monospace;
+    background-color: #564d4d;
+    
+}
+
+.charts{
+    margin:10px 10px;
+}
+
+.chart_title{
+    font-family: 'Candara', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #db0000;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    max-height: 50px;		
+}
+
+
+div.test {
+    width: 200px;
+    height: 100px;
+    
+    border: 3px solid red ;
+}
+
+.chart_title_text{
+    vertical-align:middle;
+}
+
+#linechart{
+    background-color: black;
+}
+
+#dashboard_title{
+    background-color: #db0000;
+    color: white;
+    padding-left: 40px;
+}
+
+#dashboard_title_text{
+    font-size: 40px;
+    font-family: 'Candara', sans-serif;
+    font-weight: bold;
+}
+
+polyline{
+    opacity: .3;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    fill: none;
+}
+
+
+button {
+    font-family: 'Candara', sans-serif;
+    padding: 0.3rem 1rem;
+    margin: 0 auto 0.5rem auto;
+    background-color: firebrick;
+    color: white;
+    opacity: 0.8;
+    border: 1px solid firebrick;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+

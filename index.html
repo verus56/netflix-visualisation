@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<title>Netflix visualization</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dependencies/jquery-ui.css">
+<link rel="stylesheet" href="myStyle.css">
+<script src="dependencies/jquery.min.js"></script>
+<script src="dependencies/d3.min.js"></script>
+<script src="dependencies/underscore-min.js"></script>
+<script src="dependencies/sankey.js"></script>
+<script src="dependencies/d3-scale-chromatic.v1.min.js"></script>
+<script src="dependencies/jquery-ui.js"></script>
+
+
+<!-- debut -->
+<body>
+	<!-- Titre -->
+	<div id="dashboard_title">
+		<span id="dashboard_title_text"><center>Visualisation de Netflix Data</center></span>
+	</div>
+
+	<!-- bubble chart Amout of movies by director -->
+	<div style="display:flex;width:95%;height:500px;margin:0 auto;margin-bottom: 30px;">
+        <div class="charts" style="width:100%; height:100%">
+			<div class="chart_title"><span class="chart_title_text"><center>Filmes par director</center></span></div>
+			<div id="bubblechart" style="width:100%; height:90%"></div>
+		</div>
+		<div class="charts" style="width:100%; height:100%">
+			<div class="chart_title"><span class="chart_title_text"><center>Filmes par cast</center></span></div>
+			<div id="bubblechart2" style="width:100%; height:90%"></div>
+		</div>
+	</div>
+
+	<!-- map -->
+	<div id="jason">
+
+		<div style="display:flex;width:95%;height:400px;margin:0 auto; margin-bottom: 30px;">
+			
+			<!-- map -->
+			<div class="charts" style="width:50%; height:100%;">
+				<div class="chart_title" style="height:10%">
+					<span class="chart_title_text"><center>Carte du monde</center></span>
+				</div>
+
+				<div style="height:90%;width:100%;display:flex">
+					<div id="netflix_map" style="width:100%; height:100%;"></div>
+				</div>
+			</div>
+
+			<!-- Line series -->
+            <div class="charts" style="width:50%; height:100%;">
+                <!-- Line chart : Movies vs tv - shows -->
+                <div class="chart_title">
+                    <span class="chart_title_text">Movies vs TV Shows</span>
+                </div>
+
+                <div style="height:150%;width:50%;display:flex" >
+                    <div id="line_chart" style="width:100%; height:100%;">
+                        <svg id="linechart"></svg>
+                    </div>
+                </div>
+            </div>
+
+
+		</div>
+	</div>
+
+	<!-- Charts : Pie/histogram/histogram -->
+	<div style="display:flex;width:94%; height:500px;margin:0 auto;margin-bottom: 30px;">
+		<div class="charts" style="width:33%; height:100%">
+			<div class="chart_title" style="height:10%">
+				<span class="chart_title_text">Number of Movie Releases by Rating</span>
+			</div>
+			<div id="barchart" style="width:100%; height:90%"></div>
+		</div>
+		<div class="charts" style="width:33%;height:100%">
+			<div class="chart_title" style="height:10%">
+				<span class="chart_title_text">Distribution of Shows</span>
+			</div>
+			<div id="distribution_of_shows" style="width:100%; height:90%"></div>
+		</div>
+		<div class="charts" style="width:33%; height:100%">
+			<div class="chart_title" style="height:10%"><span class="chart_title_text">Total Shows by Duration</span></div>
+			<div id="total_tv_shows" style="width:100%; height:88%">
+				<button id="tvshows" onclick="update(tvshows)">TV Shows</button>
+				<button id="movies" onclick="update(movies)">Movies</button>
+			</div>
+		</div>
+	</div>
+
+<script src="script.js"></script>	
+</body>
